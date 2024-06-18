@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your PWA App</title>
+    <!-- Meta Theme -->
+    <meta name="theme-color" content="#f2f2f2">
+    
+    <!-- Inline critical CSS -->
+    <style>
+        /* Critical CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        /* Add more critical styles as needed */
+    </style>
+    
+    <!-- Defer loading of non-critical CSS -->
+    <link rel="stylesheet" href="../css/styles.css" media="print" onload="this.media='all'">
+    
+    <!-- Manifest file -->
+    <link rel="manifest" href="../manifest.json">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+</head>
+<body>
+    <h1>Welcome to Your PWA Boilerplate</h1>
+    <p>This is the main page of your Progressive Web App.</p>
+
+    <button id="click-me-button">Click Me!</button>
+
+    <!-- Defer loading of non-critical JavaScript -->
+    <script src="../js/main.js" defer></script>
+</body>
+</html>
+
+
